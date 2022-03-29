@@ -1,0 +1,992 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+marquee{
+    position: fixed;
+top: 10PX;
+font-size: 2REM;
+color: black;
+}
+body{
+    background-color: #EEEEEE;
+}
+
+.burger{
+    display: none;
+    width: 30px ;
+    height: 30px;
+    position: absolute;
+    top: 24px;
+    right: 0px
+}
+.line{
+    width: 20px;
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    background-color: #EEEEEE;
+   padding: 10px 20px;
+ background-blend-mode: color-dodge;
+}
+header{
+    display: flex;
+    width: 100vw;
+  height: 100%;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+.top-icon{
+    display: block;
+    width: 30px;
+    height: 30px ;border-radius: 50px;
+    position: fixed;
+right: 5px;
+bottom: 10px;
+
+}
+
+
+.cursor {
+    position:absolute;
+    width: 30px ;
+    height:30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+    background-blend-mode: difference;
+    
+    
+}
+.logo{
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 1px;
+}
+nav{ 
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ padding:10px 10px;
+ font-family: 'Fredoka', sans-serif;
+ color: rgb(66, 65, 65);
+font-size: 1rem;
+ font: bolder;
+}
+
+.nav-h1{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+ 
+}
+.nav-h1 a{
+text-decoration: none;
+color: black;
+ 
+}
+
+
+
+
+.top-right-nav{
+    display: flex;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.top-right-nav h1 a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin: 0 2px;
+}
+
+
+
+.cursor2
+{
+    position:fixed;
+    width: 20px ;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.title-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top:2rem;
+}
+
+
+.title-text:hover ~ .cursor2{
+transform: scale(200px);
+}
+
+
+
+.title-text img{
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;;
+    height: 250px;
+    padding: 20px 0;
+}
+
+
+
+
+
+.title-h1{
+  font-size: 8rem;
+  font-family: 'Fredoka', sans-serif;
+margin: -25px 0 ;
+}
+
+
+
+
+
+.buttom-flex{
+    display: flex;
+    padding: 20px 0;
+    font-family: 'Fredoka', sans-serif;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+height: 350px;
+
+}
+
+.div-clm-text{
+    display:inline-block;
+    font-family: 'Fredoka', sans-serif;
+align-items: baseline;
+
+justify-content: baseline;
+font-size: 1.5rem;
+margin:50px 0 0 0px;
+
+padding: 8px 29px;
+
+width: 50%;
+}
+
+.arrow-img{
+    width:600px;
+    margin-top: 5rem;
+
+}.arrow-img img{
+    width: 100%;
+    
+}
+
+
+.title-text-2{
+    text-align: right;
+    width: 100%;
+    font-size: 5rem;
+    padding: 10px 60px;
+    
+}
+.title-h2{
+    margin: -50px 0;
+}
+
+
+
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+margin-top: 50px;
+}
+
+
+
+
+.title-works{
+
+    text-align: left;
+    width: 100%;
+    font-size: 7rem;
+    padding: 40px 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+.grid-3{
+    display: grid;
+    width: 100%;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows:200px 200px ;
+    height: 600px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+
+}
+.card{
+    width: 100%;
+ background-color: rgb(71, 71, 71);   
+height: 100%;
+}.card img{
+    width: 100%;
+ background-color: rgb(71, 71, 71);   
+height: 100%;
+}
+
+
+
+.title-about-top{
+    font-size: 4rem;
+    padding: 40px 10px;
+    font-family: 'Syne Mono', monospace;
+    width: 100%;letter-spacing: 5px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+ 
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+.about{
+display: flex;
+margin-top: -40px;
+width: 100%;
+
+height: 700px;
+}
+
+
+.img-flex{
+   width: 100%;
+  
+   display: flex;
+}
+
+
+.img-flex img{
+    width: 400px;
+    height: 200px;
+    margin-top: 80px;
+}
+
+
+
+
+
+.title-text-about{
+    width: 100%;
+    font-size: 4rem;
+    font-family: 'Syne Mono', monospace;
+padding:100px 0 0 50px;
+
+}
+.title-text-about{
+    margin: -20px 0;
+
+}
+.title-about{
+    margin: -40px 0;
+}
+
+
+.about-p{
+    margin-top: 50px;
+}
+
+
+.v-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.v-list  li{
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-flex{
+    font-size: 4rem;
+    padding: 40px 10px;
+    font-family: 'Syne Mono', monospace;
+    width: 100%;letter-spacing: 5px;
+    display: flex;
+    text-align: right;
+    justify-content: left;
+ 
+    margin-top: 20px;
+}
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+
+
+.flex{
+    display: flex;
+    width: 100%;
+justify-content: space-between;
+}
+.flex input{
+    display: flex;
+    width:48%;
+    padding: 10px 10px;  border: 0;
+  border-radius: 2px;
+  
+}
+
+.flex-subject{
+    display: flex;
+    width: 100%;
+}
+.flex-subject input{  
+    margin: 10px 0; 
+     padding: 10px 10px;
+    display: flex;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+}
+input:focus
+{
+    outline: 0;
+}
+
+
+
+#msg{
+    width: 100%;
+    padding: 10px 0px 150px 10px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.btn-send{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: white;
+    margin-top: 20px;
+cursor: pointer;
+color: black;
+font-size: 1.5rem;
+}
+.btn-send:hover{
+border: 2px solid rgb(214, 214, 214);
+border-radius: 50px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+justify-content: center;
+text-align: center;
+
+    height: 50px;    font-family: 'Syne Mono', monospace;
+}
+
+
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+/* media querry---------------------------------- */
+
+
+@media only screen and (max-width: 1110px) {
+
+    .nav-h1{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+  
+    }
+
+
+
+
+    .title-text-2 {
+        text-align: right;
+        width: 100%;
+        font-size: 3rem;
+        padding: 28px 60px;
+    }
+
+
+    .title-h2 {
+        margin: -25px 0;
+    }
+
+    .div-clm-text {
+        display: inline-block;
+        font-family: 'Fredoka', sans-serif;
+        align-items: baseline;
+        justify-content: baseline;
+        font-size: 1rem;
+        margin: 50px 0 0 0px;
+        padding: 8px 29px;
+        width: 50%;
+    }
+
+
+
+
+
+
+
+
+
+    /* about------------------------- */
+    .title-text-about {
+        width: 100%;
+        font-size: 3rem;
+        font-family: 'Syne Mono', monospace;
+        padding: 100px 0 0 50px;
+    }
+
+
+    .title-text-2 {
+        text-align: right;
+        width: 100%;
+        font-size: 3rem;
+        padding: 28px 1px;
+    }
+    .title-about {
+        margin: -20px 2px;
+    }
+
+    .title-text img {
+        display: flex;
+        flex-direction: column;
+        width: 67%;
+        height: 340px;
+        padding: 20px 0;
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+  @media only screen and (max-width: 950px) {
+
+.nav-h1{
+    display: flex;
+    width: 80%;
+    font-size: 15px ;
+}
+.top-right-nav{
+    display: none;
+}
+.burger{
+    display:block;
+    right: 10px;
+}
+
+  }
+
+
+  
+  @media only screen and (max-width: 855px) {
+
+    .title-h1 {
+        font-size: 5rem;
+        font-family: 'Fredoka', sans-serif;
+        margin: -12px 0;
+    }
+    .title-text img {
+        display: flex;
+        flex-direction: column;
+        width: 67%;
+        height: 291px;
+  }
+  .nav-h1 {
+    display: flex;
+    width: 80%;
+    font-size: 11px;
+}
+.title-works {
+    text-align: left;
+    width: 100%;
+    font-size: 4rem;
+    padding: 40px 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+  }
+    @media only screen and (max-width: 777px) {
+
+
+.title-text-2 {
+    text-align: right;
+    width: 100%;
+    font-size: 2rem;
+    padding: 28px 1px;
+}
+.title-h2 {
+    margin: -19px 0;
+}
+
+
+.title-text-2 {
+    margin-top: 3rem;
+    text-align: right;
+    width: 100%;
+    font-size: 2rem;
+    padding: 28px 1px;
+}
+
+
+
+
+
+/* about----------------------- */
+.title-about-top {
+    font-size: 3rem;
+    padding: 40px 10px;
+    font-family: 'Syne Mono', monospace;
+    width: 100%;
+    letter-spacing: 5px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-top: 200px;
+}
+
+.title-text-about {
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Syne Mono', monospace;
+    padding: 217px 0 0 50px;
+}
+    }
+
+
+    @media only screen and (max-width: 750px) {
+
+        .img-flex {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-text-about {
+            width: 100%;
+            font-size: 2rem;
+            font-family: 'Syne Mono', monospace;
+            padding: 61px 0 0 14px;
+        }
+
+
+.title-about{
+    font-size: 5rem;
+}
+.contact-flex {
+    font-size: 3rem;
+    padding: 40px 10px;
+    font-family: 'Syne Mono', monospace;
+    width: 100%;
+    letter-spacing: 5px;
+    display: flex;
+    text-align: right;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+    }
+
+    @media only screen and (max-width:620px) {
+
+
+
+
+
+
+        .nav-h1 {
+            display: none;
+            width: 80%;
+            font-size: 10px;
+        }
+
+
+
+
+        .title-h1 {
+            font-size: 3rem;
+            font-family: 'Fredoka', sans-serif;
+            margin: -12px 0;
+        }
+
+
+        .title-about{
+            font-size: 6REM;
+        }
+
+
+        .arrow-img {
+            width: 115px;
+            margin-top: 5rem;
+        }
+
+
+        .div-clm-text {
+            display: inline-block;
+            font-family: 'Fredoka', sans-serif;
+            align-items: baseline;
+            justify-content: baseline;
+            font-size: 15px;
+            margin: 50px 0 0 0px;
+            padding: 8px 2px;
+            width: 80%;
+        }
+        .title-h2 {
+            margin: -4px 0;
+        }
+        .arrow-img {
+            width: 287px;
+            margin-top: 5rem;
+        }
+
+        .title-text-2 {
+            margin-top: 3rem;
+            text-align: left;
+            width: 100%;
+            font-size:3.2rem;
+            padding: 28px 1px;
+        }
+        
+        
+
+
+
+
+
+        .title-h1 {
+            font-size: 3rem;
+            font-family: 'Fredoka', sans-serif;
+            margin: -4px 0;
+        }
+
+
+
+
+
+
+
+
+
+        .grid-3 {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 200px 200px;
+            height: 100%;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .title-text img {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 291px;
+        }
+
+        .buttom-flex {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            font-family: 'Fredoka', sans-serif;
+            padding-top: 5px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+        .arrow-img {
+            width: 138px;
+            margin-top: 2rem;
+        }
+
+        .div-clm-text {
+            display: inline-block;
+            font-family: 'Fredoka', sans-serif;
+            align-items: baseline;
+            justify-content: baseline;
+            font-size: 20px;
+            margin: 50px 0 0 0px;
+            padding: 8px 2px;
+            width: 80%;
+        }
+    }
+
+
+    
+    @media only screen and (max-width:500px) {
+
+
+        .buttom-flex {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            font-family: 'Fredoka', sans-serif;
+            padding-top: 5px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            TEXT-ALIGN: CENTER;
+            height: 100%;
+        }
+
+        .title-text-2 {
+            margin-top: 3rem;
+            text-align: left;
+            width: 100%;
+            font-size: 2.2rem;
+            padding: 28px 1px;
+        }
+
+
+        .title-works {
+            text-align: left;
+            width: 100%;
+            font-size: 3rem;
+            padding: 40px 10px;
+            font-family: 'Fredoka', sans-serif;
+        }
+        .about {
+            display: flex;
+            margin-top: -40px;
+            width: 100%;
+            height: 100%;
+            padding: 50px 0 ;
+        }
+
+
+        .title-about {
+            font-size: 3REM;
+        }
+
+
+        .v-list {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+
+
+
+        .img-flex img {
+            width: 100%;
+            height: 200px;
+            margin-top: 80px;
+        }
+
+    }
+
+
+
+    @media only screen and (max-width:375px) {
+
+
+
+        .title-text {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 5rem;
+        }
+        .title-text img {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 224px;
+        }
+
+        .div-clm-text {
+            display: inline-block;
+            font-family: 'Fredoka', sans-serif;
+            align-items: baseline;
+            justify-content: baseline;
+            font-size: 12px;
+            margin: 20px 0 0 0px;
+            padding: 8px 2px;
+            width: 80%;
+        }
+
+
+        .title-text-2 {
+            margin-top: 3rem;
+            text-align: left;
+            width: 100%;
+            font-size: 1.8rem;
+            padding: 28px 1px;
+        }
+
+        .grid-3 {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 200px 200px;
+            height: 100%;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+
+
+        .title-about-top {
+            font-size: 3rem;
+            padding: 40px 10px;
+            font-family: 'Syne Mono', monospace;
+            width: 100%;
+            letter-spacing: 5px;
+            display: flex;
+            text-align: right;
+            justify-content: right;
+            margin-top: 46px;
+        }
+
+        .about-p {
+            margin-top: 50px;
+            font-size: 27px;
+        }
+
+
+        .v-list {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+            padding-left: 1px;
+            padding-top: 10px;
+        }
+        .contact-flex {
+            font-size: 2rem;
+            padding: 40px 10px;
+            font-family: 'Syne Mono', monospace;
+            width: 100%;
+            letter-spacing: 5px;
+            display: flex;
+            text-align: right;
+            justify-content: left;
+            margin-top: 20px;
+        }
+
+
+    }
+
+
+    @media only screen and (max-width:345px) {
+
+
+
+
+        .about-p {
+            margin-top: 50px;
+            font-size: 22px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1440px;
+            align-items: center;
+            background-color: #EEEEEE;
+            padding: 8px 7px;
+        }
+        .title-about-top {
+            font-size: 2rem;
+            padding: 40px 10px;
+            font-family: 'Syne Mono', monospace;
+            width: 100%;
+            letter-spacing: 5px;
+            display: flex;
+            text-align: right;
+            justify-content: right;
+            margin-top: 46px;
+        }
+
+
+
+
+    }
